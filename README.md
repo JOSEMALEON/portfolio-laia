@@ -8,17 +8,20 @@ Versión de prueba en desarrollo. Mantenimiento: José M. León.
 
 ```
 index.html          Contenido de la página (textos en castellano)
+aviso-legal.html    Aviso legal (borrador, faltan datos de Laia)
+privacidad.html     Política de privacidad (borrador, faltan datos de Laia)
 css/estilos.css     Diseño: colores, tipografías, maquetación y animaciones
 js/idiomas.js       Traducciones al catalán e inglés (T) y textos del test (QZ)
 js/main.js          Funcionamiento: idiomas, contadores, test, menú móvil y WhatsApp
-img/
-  laia.jpg            Foto de portada (reconstruida sin texto a partir de su presentación en Instagram)
-  laia-hola.jpg       Foto "Hola :)" de la sección Sobre mí
-  caso-menorca-hd.jpg Imagen del caso Ambients Menorca (catálogo Cucine Lube, web de Ambients)
-  caso-malaga-hd.jpg  Imagen del caso Lube Cocinas Málaga (showroom, web de Lube Málaga)
-  vielha-reel.jpg     Portada de reel usada en el visual del caso Vielha
-  og.jpg              Imagen de vista previa al compartir el enlace
+img/                Imágenes en WebP (og.jpg en JPG para redes sociales)
+sitemap.xml         Mapa del sitio para Google
+.nojekyll           Indica a GitHub Pages que sirva los archivos tal cual
 ```
+
+## Publicación
+
+GitHub Pages: `https://josemaleon.github.io/portfolio-laia/`
+Si se usa un dominio propio, cambiar la URL en `index.html` (canonical, og:url, og:image y JSON-LD) y en `sitemap.xml`.
 
 ## Cómo verla
 
@@ -40,8 +43,11 @@ Abrir `index.html` en el navegador. No necesita instalación ni compilación.
 - [ ] Fotos sin texto de Laia y fotos de proyectos reales, con permiso de cada cliente
 - [ ] Paquetes de servicios y precios
 - [ ] Revisión de textos en catalán e inglés por Laia
-- [ ] Antes de publicar: aviso legal y privacidad, tipografías alojadas localmente, imágenes en WebP
-- [ ] Al publicar: cambiar `og:image` por la URL absoluta
+- [x] Imágenes en WebP con carga diferida
+- [x] Borradores de aviso legal y privacidad, enlazados en el pie
+- [ ] Completar los datos de Laia en `aviso-legal.html` y `privacidad.html` (marcados en amarillo) y revisarlos con un profesional
+- [ ] Alojar las tipografías en la propia web y quitar el apartado de Google Fonts de la privacidad
+- [ ] Hacer público el repositorio y activar GitHub Pages
 
 ## Derechos de las imágenes
 

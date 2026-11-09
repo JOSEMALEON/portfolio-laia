@@ -8,14 +8,17 @@
 <!-- PENDIENTE (versión de prueba): fotos de Laia, cifras de resultados por caso, permiso de las marcas, email de contacto. Busca la clase .tbd -->
 <meta name="theme-color" content="#152A3B">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23152A3B'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%23E0AE4C'%3EL%3C/text%3E%3C/svg%3E">
-<!-- Vista previa al compartir (WhatsApp, LinkedIn…). Al publicar, cambia img/og.jpg por la URL completa, p. ej. https://tudominio.com/img/og.jpg -->
+<!-- URL pública (GitHub Pages). Si se usa un dominio propio, cambiar aquí, en og:url, og:image y sitemap.xml -->
+<link rel="canonical" href="https://josemaleon.github.io/portfolio-laia/">
+<meta property="og:url" content="https://josemaleon.github.io/portfolio-laia/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Laia Orfila · Estrategia de contenido para marcas del hogar">
 <meta property="og:description" content="Contenido que convierte seguidores en clientes para estudios y distribuidores de cocinas de diseño.">
-<meta property="og:image" content="img/og.jpg">
+<meta property="og:image" content="https://josemaleon.github.io/portfolio-laia/img/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:locale" content="es_ES"><meta property="og:locale:alternate" content="ca_ES"><meta property="og:locale:alternate" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Laia Orfila · Estrategia de contenido","description":"Estrategia de contenido y creatividad para estudios de cocina, distribuidores y marcas del sector hogar.","founder":{"@type":"Person","name":"Laia Orfila"},"address":{"@type":"PostalAddress","addressRegion":"Menorca","addressCountry":"ES"},"areaServed":"ES","knowsLanguage":["es","ca","en"],"sameAs":["https://www.instagram.com/una.laiacreativa/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Laia Orfila · Estrategia de contenido","description":"Estrategia de contenido y creatividad para estudios de cocina, distribuidores y marcas del sector hogar.","founder":{"@type":"Person","name":"Laia Orfila"},"address":{"@type":"PostalAddress","addressRegion":"Menorca","addressCountry":"ES"},"areaServed":"ES","knowsLanguage":["es","ca","en"],"url":"https://josemaleon.github.io/portfolio-laia/","image":"https://josemaleon.github.io/portfolio-laia/img/og.jpg","sameAs":["https://www.instagram.com/una.laiacreativa/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -23,6 +26,7 @@
 </head>
 <body>
 
+<a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
 <nav id="nav">
   <div class="wrap">
     <a href="#" class="logo">Laia Orfila<span>.</span></a>
@@ -42,7 +46,7 @@
   <div class="mnav" id="mnav" hidden><a href="#metodo" data-i18n="nav.m">Método</a><a href="#casos" data-i18n="nav.c">Casos</a><a href="#red" data-i18n="nav.r">Red Lube</a><a href="#servicios" data-i18n="nav.s">Servicios</a><a href="#aprende" data-i18n="nav.e">Aprende</a><a href="#sobre-mi" data-i18n="nav.a">Sobre mí</a><a href="#test" data-i18n="nav.t">Test</a></div>
 </nav>
 
-<header class="hero">
+<header class="hero" id="contenido" tabindex="-1">
   <div class="wrap hero-grid">
     <div class="r">
       <p class="eyebrow" data-i18n="h.eye"><b>●</b> Estrategia de contenido · Sector hogar</p>
@@ -53,7 +57,7 @@
         <a href="#casos" class="btn btn-line" data-i18n="h.b2">Ver casos</a>
       </div>
     </div>
-    <div class="photo r has-img" role="img" aria-label="Laia Orfila en la costa de Menorca" style="background-image:url(img/laia.jpg)"></div>
+    <div class="photo r has-img"><img src="img/laia.webp" alt="Laia Orfila sonriendo junto al mar en la costa de Menorca" width="592" height="740" fetchpriority="high"></div>
   </div>
   <div class="wrap hero-meta r">
     <div data-i18n="meta1"><strong>4</strong>marcas de cocina activas</div>
@@ -101,7 +105,7 @@
     </div>
 
     <article class="case r">
-      <div class="case-visual" role="img" aria-label="Cocina Cucine Lube, Ambients Menorca" style="background:url(img/caso-menorca-hd.jpg) center/cover"></div>
+      <div class="case-visual"><img src="img/caso-menorca-hd.webp" alt="Cocina Cucine Lube de madera clara con isla y lámpara de globos, del catálogo de Ambients Menorca" width="1400" height="963" loading="lazy" decoding="async"></div>
       <div>
         <span class="tag" data-i18n="k1.tag">Menorca · Distribuidor oficial Cucine Lube</span>
         <h3>Ambients Menorca</h3>
@@ -132,7 +136,7 @@
     </article>
 
     <article class="case r">
-      <div class="case-visual" role="img" aria-label="Cocina Cucine Lube, showroom de Málaga" style="background:url(img/caso-malaga-hd.jpg) center/cover"></div>
+      <div class="case-visual"><img src="img/caso-malaga-hd.webp" alt="Cocina Cucine Lube con isla negra y muebles de madera en el showroom de Lube Cocinas Málaga" width="1400" height="963" loading="lazy" decoding="async"></div>
       <div>
         <span class="tag" data-i18n="k3.tag">Málaga · Distribuidor oficial Cucine Lube</span>
         <h3>Lube Cocinas Málaga</h3>
@@ -193,7 +197,7 @@
 
 <section class="about" id="sobre-mi">
   <div class="wrap split">
-    <div class="photo r has-img" role="img" aria-label="Presentación de Laia en Instagram: Hola, soy Laia" style="background-image:url(img/laia-hola.jpg)"></div>
+    <div class="photo r has-img"><img src="img/laia-hola.webp" alt="Presentación de Laia en Instagram: Hola, soy Laia, 25 añitos, de Menorca, me gusta pensar que soy creativa" width="712" height="890" loading="lazy" decoding="async"></div>
     <div class="r">
       <p class="eyebrow" data-i18n="a.eye"><b>04</b> Sobre mí</p>
       <h2 style="margin-top:1.2rem" data-i18n="a.h2">Hola, soy Laia.</h2>
@@ -233,6 +237,7 @@
   <div class="wrap">
     <span data-i18n="ft1">© 2026 Laia Orfila · Estrategia de contenido y creatividad</span>
     <span data-i18n="ft2">Menorca, España</span>
+    <span data-i18n="ft3"><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a></span>
   </div>
 </footer>
 

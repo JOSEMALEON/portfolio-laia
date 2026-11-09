@@ -83,7 +83,9 @@ const T = {
     "nav.t": "Test",
     "quiz.eye": "<b>●</b> Autodiagnòstic",
     "quiz.h2": "El teu Instagram <em>ven</em>?",
-    "quiz.p": "5 preguntes, 1 minut. Descobreix què li falta al teu perfil per convertir seguidors en clients."
+    "quiz.p": "5 preguntes, 1 minut. Descobreix què li falta al teu perfil per convertir seguidors en clients.",
+    "skip": "Salta al contingut",
+    "ft3": "<a href=\"aviso-legal.html\">Avís legal</a> · <a href=\"privacidad.html\">Privacitat</a>"
   },
   "en": {
     "title": "Laia Orfila · Content strategy for home brands",
@@ -161,7 +163,9 @@ const T = {
     "nav.t": "Quiz",
     "quiz.eye": "<b>●</b> Self-assessment",
     "quiz.h2": "Does your Instagram <em>sell</em>?",
-    "quiz.p": "5 questions, 1 minute. Find out what your profile needs to turn followers into clients."
+    "quiz.p": "5 questions, 1 minute. Find out what your profile needs to turn followers into clients.",
+    "skip": "Skip to content",
+    "ft3": "<a href=\"aviso-legal.html\">Legal notice</a> · <a href=\"privacidad.html\">Privacy</a>"
   }
 };
 

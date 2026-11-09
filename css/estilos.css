@@ -18,7 +18,8 @@ h2{font-size:clamp(2rem,4vw,3.2rem)}
 h3{font-size:1.5rem}
 em{font-style:italic;color:var(--sea);background:linear-gradient(transparent 64%,rgba(224,174,76,.55) 64%);padding:0 .08em}
 .eyebrow{font:600 .75rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:flex;gap:.8rem;align-items:center}
-.eyebrow b{color:var(--sun);font-weight:600}
+.eyebrow b{color:#7E5A10;font-weight:600} /* dorado oscuro: contraste AA sobre fondos claros */
+.cases .eyebrow b,.edu .eyebrow b{color:var(--sun)}
 .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.5rem;border-radius:99px;font-weight:600;font-size:.95rem;text-decoration:none;transition:.25s}
 .btn-dark{background:var(--sun);color:var(--ink)}
 .btn-dark:hover{background:var(--ink);color:var(--paper)}
@@ -55,7 +56,9 @@ nav .wrap{display:flex;justify-content:space-between;align-items:center;height:7
 .hero p.lead{font-size:1.2rem;color:var(--muted);max-width:34rem;margin:1.8rem 0 2.4rem}
 .cta-row{display:flex;gap:.8rem;flex-wrap:wrap}
 .photo{aspect-ratio:4/5;border-radius:220px 220px 14px 14px;background:linear-gradient(170deg,#A9BEDA 0%,#2C5A7E 48%,#E3CDAE 80%,#E0AE4C 100%);position:relative;overflow:hidden}
-.photo.has-img{background-size:cover;background-position:center}
+.photo.has-img{background:none}
+.photo>img{width:100%;height:100%;object-fit:cover;display:block}
+.case-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .photo.has-img::after{display:none}
 .photo::after{content:attr(data-label);position:absolute;inset:auto 0 1.2rem;text-align:center;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;opacity:.9}
 .hero-meta{display:flex;gap:2.5rem;margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
@@ -105,7 +108,7 @@ nav .wrap{display:flex;justify-content:space-between;align-items:center;height:7
 .case:nth-of-type(even) .case-visual{order:2}
 .phone-scene{background:linear-gradient(150deg,#EFE5D6,#E3CDAE);align-items:center;justify-content:center;padding:0}
 .phone{height:88%;aspect-ratio:9/18.5;border-radius:26px;background:#0E1E2A;padding:6px;transform:rotate(-4deg);box-shadow:0 30px 60px -25px rgba(21,42,59,.7);position:relative;z-index:1}
-.screen{position:relative;width:100%;height:100%;border-radius:21px;overflow:hidden;background:url(../img/vielha-reel.jpg) center/cover;display:flex;flex-direction:column;justify-content:flex-end;padding:12% 9%}
+.screen{position:relative;width:100%;height:100%;border-radius:21px;overflow:hidden;background:url(../img/vielha-reel.webp) center/cover;display:flex;flex-direction:column;justify-content:flex-end;padding:12% 9%}
 .screen::before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(14,30,42,.85))}
 .screen>*{position:relative}
 .pill{position:absolute;top:7%;left:9%;font:600 clamp(.55rem,.9vw,.7rem) var(--sans);font-style:normal;background:var(--sun);color:var(--ink);padding:.25rem .6rem;border-radius:99px}
@@ -236,3 +239,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .r{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
 .r.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* Accesibilidad */
+.skip{position:absolute;left:1rem;top:-60px;z-index:100;background:var(--ink);color:var(--paper);padding:.7rem 1.1rem;border-radius:8px;text-decoration:none;font-weight:600;transition:top .2s}
+.skip:focus{top:1rem}
+a:focus-visible,button:focus-visible{outline:2px solid var(--sun);outline-offset:3px;border-radius:6px}
+#contenido:focus{outline:none}
+footer a{color:inherit}
+
+/* Páginas legales */
+.legal nav{position:sticky}
+.legal nav .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+.legal .back{font-size:.92rem;color:var(--muted);text-decoration:none}
+.legal .back:hover{color:var(--ink)}
+.legal-body{max-width:760px;padding:4rem 0 5rem}
+.legal-body h1{font-size:clamp(2.2rem,5vw,3.2rem);margin-bottom:.6rem}
+.legal-body .upd{color:var(--muted);font-size:.9rem;margin-bottom:2.5rem}
+.legal-body h2{font-size:1.5rem;margin:2.4rem 0 .8rem}
+.legal-body p,.legal-body li{color:#3E3833;margin-bottom:.8rem}
+.legal-body ul{padding-left:1.2rem;margin-bottom:1rem}
+.legal-body mark{background:#F6E2B0;padding:0 .25em;border-radius:3px}
+.legal-body .see{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--line)}
