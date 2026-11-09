@@ -1,0 +1,9 @@
+# Archivos del sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Imágenes antiguas que ya no usa la web
+img/caso-malaga.jpg
+img/caso-menorca.jpg
+img/caso-vielha.jpg
