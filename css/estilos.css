@@ -304,3 +304,5 @@ footer a{display:inline-block;padding:.65rem 0}
 .hero-meta{flex-wrap:wrap;gap:1.1rem 1.8rem}
 .hero-meta strong{font-size:1.4rem}
 }
+/* Nombres de cuenta largos (@...) pueden partirse en móviles estrechos */
+.result>div{min-width:0;overflow-wrap:anywhere}
