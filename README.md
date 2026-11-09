@@ -7,7 +7,10 @@ Versión de prueba en desarrollo. Mantenimiento: José M. León.
 ## Estructura
 
 ```
-index.html        Página completa: contenido, estilos y scripts
+index.html          Contenido de la página (textos en castellano)
+css/estilos.css     Diseño: colores, tipografías, maquetación y animaciones
+js/idiomas.js       Traducciones al catalán e inglés (T) y textos del test (QZ)
+js/main.js          Funcionamiento: idiomas, contadores, test, menú móvil y WhatsApp
 img/
   laia.jpg            Foto de portada (reconstruida sin texto a partir de su presentación en Instagram)
   laia-hola.jpg       Foto "Hola :)" de la sección Sobre mí
@@ -24,10 +27,11 @@ Abrir `index.html` en el navegador. No necesita instalación ni compilación.
 ## Cómo editar
 
 - **Textos en castellano**: directamente en el HTML.
-- **Catalán e inglés**: en el objeto `const T={ca:{…},en:{…}}` al final de `index.html`. Cada texto tiene una clave igual a su atributo `data-i18n`.
-- **Test "¿Tu Instagram vende?"**: preguntas, consejos y resultados en `const QZ` (tres idiomas).
+- **Catalán e inglés**: en `js/idiomas.js`, objeto `T`. Cada texto tiene una clave igual a su atributo `data-i18n` en el HTML.
+- **Test "¿Tu Instagram vende?"**: preguntas, consejos y resultados en `js/idiomas.js`, objeto `QZ` (tres idiomas).
 - **Cifras con contador**: atributo `data-count` en el HTML y en las traducciones.
-- **Colores**: variables al inicio del CSS (`--sea`, `--sand`, `--sun`).
+- **Colores**: variables al inicio de `css/estilos.css` (`--sea`, `--sand`, `--sun`).
+- **Rutas de imágenes en el CSS**: empiezan por `../img/` porque el CSS está dentro de la carpeta `css/`.
 
 ## Pendiente
 
