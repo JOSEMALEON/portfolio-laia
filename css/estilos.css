@@ -298,3 +298,9 @@ footer a{display:inline-block;padding:.65rem 0}
 .case .q{max-width:47%;left:auto;right:4%}
 .q1{top:7%}.q2{top:35%}.q3{top:67%;bottom:auto}
 }
+
+/* Cifras bajo la portada: en móviles pequeños pasan a dos líneas para no desbordar */
+@media(max-width:480px){
+.hero-meta{flex-wrap:wrap;gap:1.1rem 1.8rem}
+.hero-meta strong{font-size:1.4rem}
+}
