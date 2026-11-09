@@ -27,6 +27,15 @@ Si se usa un dominio propio, cambiar la URL en `index.html` (canonical, og:url, 
 
 Abrir `index.html` en el navegador. No necesita instalación ni compilación.
 
+## Pruebas
+
+`pruebas/test_web.py` revisa la web en escritorio y móvil (10 anchuras, 3 idiomas). Conviene ejecutarlo después de cada cambio:
+
+```
+pip install playwright && playwright install chromium
+python pruebas/test_web.py
+```
+
 ## Cómo editar
 
 - **Textos en castellano**: directamente en el HTML.

@@ -33,6 +33,10 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelect
 
 /* Test "¿Tu Instagram vende?" (textos en js/idiomas.js → QZ) */
 let qi=0,ans=[];
+/* Saber si se usa teclado o pantalla táctil/ratón */
+let usingKeyboard=false;
+addEventListener('keydown',()=>{usingKeyboard=true;});
+addEventListener('pointerdown',()=>{usingKeyboard=false;});
 function qR(focus){
   const L=QZ[document.documentElement.lang]||QZ.es, el=document.getElementById('qz');
   if(qi<5){
@@ -43,7 +47,7 @@ function qR(focus){
     el.innerHTML=`<div class="qz-res"><div class="qz-score"><b>${sc}</b>/10<small>${L.score}</small></div><div><h3>${t[0]}</h3><p>${t[1]}</p></div></div><h4>${L.tipsT}</h4><ul class="qz-tips">${(weak.length?weak:[L.all]).map(x=>`<li>${x}</li>`).join('')}</ul><div class="cta-row"><a class="btn btn-dark" href="https://wa.link/pn85h8" target="_blank" rel="noopener">${L.cta}</a><button type="button" class="btn btn-ghost" id="qz-again">${L.again}</button></div>`;
     el.querySelector('#qz-again').addEventListener('click',()=>{qi=0;ans=[];qR(true);});
   }
-  if(focus){const f=el.querySelector('button,a'); f&&f.focus({preventScroll:true});}
+  if(focus&&usingKeyboard){const f=el.querySelector('button,a'); f&&f.focus({preventScroll:true});}
 }
 window.__onLang=()=>qR(false); qR(false);
 
@@ -53,6 +57,7 @@ const mClose=()=>{mn.hidden=true;mb.setAttribute('aria-expanded','false');};
 mb.addEventListener('click',()=>{const open=mn.hidden;mn.hidden=!open;mb.setAttribute('aria-expanded',String(open));});
 mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',mClose));
 addEventListener('keydown',e=>{if(e.key==='Escape')mClose();});
+document.addEventListener('click',e=>{if(!mn.hidden&&!e.target.closest('nav'))mClose();});
 
 /* WhatsApp flotante: aparece al pasar la portada */
 const wa=document.querySelector('.wa-float');
