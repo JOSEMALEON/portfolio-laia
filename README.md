@@ -47,7 +47,7 @@ Abrir `index.html` en el navegador. No necesita instalación ni compilación.
 - [x] Borradores de aviso legal y privacidad, enlazados en el pie
 - [ ] Completar los datos de Laia en `aviso-legal.html` y `privacidad.html` (marcados en amarillo) y revisarlos con un profesional
 - [ ] Alojar las tipografías en la propia web y quitar el apartado de Google Fonts de la privacidad
-- [ ] Hacer público el repositorio y activar GitHub Pages
+- [x] Repositorio público y GitHub Pages activado: https://josemaleon.github.io/portfolio-laia/
 
 ## Derechos de las imágenes
 
