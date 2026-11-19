@@ -1,0 +1,55 @@
+{
+  "id": "CLI-0001",
+  "nombre_comercial": "Laia Orfila · Estrategia de contenido (@una.laiacreativa)",
+  "tipo_web": "portfolio",
+  "sector": "Estrategia de contenido y redes sociales para el sector hogar y cocinas de diseño",
+  "zona": "Menorca (Illes Balears); servicio en remoto para toda España",
+  "idiomas": ["es", "ca", "en"],
+  "objetivos": [
+    "Conseguir conversaciones con estudios y distribuidores de cocinas (WhatsApp / Instagram)",
+    "Demostrar resultados con casos reales de la red Cucine Lube",
+    "Captar contactos con el autodiagnóstico '¿Tu Instagram vende?' y el recurso gratuito ECO"
+  ],
+  "audiencia": [
+    "Estudios de cocina y showrooms independientes",
+    "Distribuidores oficiales de Cucine Lube en España",
+    "Marcas del hogar (mobiliario, encimeras, electrodomésticos)"
+  ],
+  "paginas": [
+    {"ruta": "/", "proposito": "Portfolio de una sola página: propuesta, método, casos, red Lube, servicios, aprende, sobre mí, test y contacto"},
+    {"ruta": "/casos/<distribuidor>/", "proposito": "Propuesta: un caso por página (Menorca, Vielha, Málaga)"},
+    {"ruta": "/ca/ y /en/", "proposito": "Propuesta: versiones indexables por idioma con hreflang"},
+    {"ruta": "/aviso-legal/", "proposito": "Aviso legal (borrador con datos pendientes)"},
+    {"ruta": "/privacidad/", "proposito": "Política de privacidad (borrador con datos pendientes)"}
+  ],
+  "conversiones": ["WhatsApp", "Mensaje directo de Instagram", "Autodiagnóstico de 5 preguntas", "Palabra clave ECO por Instagram"],
+  "stack_preliminar": {
+    "opcion": "HTML/CSS/JS estático (actual); generador estático ligero solo si se separan idiomas y casos en URLs",
+    "hosting": "GitHub Pages o Cloudflare Pages (gratuitos) con dominio propio",
+    "coste_estimado": "Dominio (~10-20 EUR/año, a verificar) + correo opcional; alojamiento 0 EUR",
+    "edicion_cliente": "Por ahora la mantiene el técnico; CMS git-based opcional si Laia necesita editar"
+  },
+  "demo": {
+    "url": "https://josemaleon.github.io/portfolio-laia/",
+    "publicada": true,
+    "publicada_en_esta_sesion": false,
+    "indexable": true,
+    "nota": "Ya estaba publicada antes de esta fase; se recomienda noindex hasta aprobar y confirmar permisos de imágenes"
+  },
+  "materiales": {
+    "autorizados": ["Textos de la demo", "Fotos de Laia (a confirmar versión definitiva)", "Paleta y tipografías"],
+    "pendientes_permiso": ["Fotos de proyectos de clientes", "Nombres y marcas Cucine Lube y distribuidores", "Cifras de seguidores por cuenta"]
+  },
+  "pendientes": [
+    "Dominio, correo y persona que aprueba",
+    "Presupuesto y plazo",
+    "Permiso escrito de cada marca para fotos y nombre",
+    "Resultados por caso y testimonios con nombre y cargo",
+    "Paquetes de servicios y precios",
+    "Revisión de catalán e inglés por Laia",
+    "Datos del titular en aviso legal y privacidad y revisión profesional",
+    "Tipografías alojadas en la propia web"
+  ],
+  "estado": "demo_pendiente_aprobacion",
+  "fecha_actualizacion": "2026-11-19"
+}

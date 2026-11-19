@@ -1,0 +1,18 @@
+{
+  "id": "CLI-0000",
+  "nombre_comercial": "Nombre comercial autorizado",
+  "tipo_web": "portfolio | corporativa | landing | tienda | reservas",
+  "sector": "texto",
+  "zona": "texto",
+  "idiomas": ["es"],
+  "objetivos": ["texto"],
+  "audiencia": ["texto"],
+  "paginas": [{"ruta": "/", "proposito": "texto"}],
+  "conversiones": ["texto"],
+  "stack_preliminar": {"opcion": "texto", "hosting": "texto", "coste_estimado": "texto", "edicion_cliente": "texto"},
+  "demo": {"url": null, "publicada": false, "indexable": false},
+  "materiales": {"autorizados": ["texto"], "pendientes_permiso": ["texto"]},
+  "pendientes": ["texto"],
+  "estado": "descubrimiento | demo_pendiente_aprobacion | preproduccion_aprobada",
+  "fecha_actualizacion": "AAAA-MM-DD"
+}
